@@ -2,4 +2,4 @@
 
 Tasks to perform git operations.
 
-![git](https://cdn-images-1.medium.com/max/1600/1*_qX0u7Xn8cyT3pAYh_6eRw.gif)
+![git](https://i.makeagif.com/media/4-27-2017/JrB_CA.gif)
