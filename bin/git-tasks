@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+
+const dotEvent = require("dot-event").default
+const dotStore = require("dot-store").default
+const cyclops = require("cyclops").default
+const git = require("../dist/git").default
+
+const events = dotEvent()
+const store = dotStore(events)
+
+cyclops({ events, store })
+
+events
+  .cyclops({
+    argv: process.argv.slice(2),
+    composer: git,
+    path: process.cwd(),
+    task: "git-tasks",
+  })
+  .catch(function(e) {
+    console.error(e)
+    process.exit(1)
+  })
