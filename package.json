@@ -38,7 +38,7 @@
   ],
   "dependencies": {
     "@babel/runtime": "7.1.2",
-    "@dot-store/log": "0.7.0",
+    "@dot-store/log": "0.8.0",
     "@dot-store/spawn": "2.2.0",
     "cyclops": "1.3.0"
   },
