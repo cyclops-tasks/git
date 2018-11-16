@@ -2,6 +2,6 @@
   "name": "project-a",
   "version": "0.0.1",
   "cyclops": {
-    "git-tasks": {}
+    "git": { "test": true }
   }
 }

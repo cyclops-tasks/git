@@ -14,8 +14,8 @@ events
   .cyclops({
     argv: process.argv.slice(2),
     composer: git,
+    op: "git",
     path: process.cwd(),
-    task: "git-tasks",
   })
   .catch(function(e) {
     console.error(e)

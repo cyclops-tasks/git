@@ -22,8 +22,8 @@ async function run(...argv) {
   await events.cyclops({
     argv,
     composer: git,
+    op: "git",
     path: `${__dirname}/fixture`,
-    task: "git-tasks",
   })
 }
 
