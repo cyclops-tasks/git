@@ -34,7 +34,7 @@ test("commit", async () => {
     "before.spawn": ({ event }) => args.push(event.args[0]),
   })
 
-  await run("-c", "-a", "-m", "hi")
+  await run("-a", "commit", "-m", "hi")
 
   expect(args).toEqual([
     {
@@ -53,6 +53,13 @@ test("commit", async () => {
     },
     {
       args: ["commit", "-a", "-m", "hi"],
+      command: "git",
+      options: {
+        cwd: `${__dirname}/fixture/project-a`,
+      },
+    },
+    {
+      args: ["push", "origin", "master"],
       command: "git",
       options: {
         cwd: `${__dirname}/fixture/project-a`,
