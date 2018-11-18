@@ -1,5 +1,5 @@
-# git-tasks
+# dot-git
 
-Tasks to perform git operations.
+dot-event git operation
 
 ![git](https://data.whicdn.com/images/297362300/original.gif)

@@ -1,7 +1,7 @@
-import cyclops from "cyclops"
 import dotEvent from "dot-event"
 import dotStore from "dot-store"
-import git from "../dist/git"
+import dotTask from "dot-task"
+import dotGit from "../dist/git"
 
 let events, store
 
@@ -9,7 +9,7 @@ beforeEach(async () => {
   events = dotEvent()
   store = dotStore(events)
 
-  cyclops({ events, store })
+  dotTask({ events, store })
 
   events.onAny({
     "before.spawn": ({ event }) => {
@@ -18,10 +18,10 @@ beforeEach(async () => {
   })
 })
 
-async function run(...argv) {
-  await events.cyclops({
-    argv,
-    composer: git,
+async function run(...arg) {
+  await events.task({
+    arg,
+    composer: dotGit,
     op: "git",
     path: `${__dirname}/fixture`,
   })
