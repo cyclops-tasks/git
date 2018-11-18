@@ -1,8 +1,8 @@
 {
-  "name": "dot-git",
+  "name": "dot-spawn-git",
   "version": "0.2.0",
   "main": "dist/git.js",
-  "description": "dot-event git operation",
+  "description": "dot-event spawn git operation",
   "keywords": [
     "dot-event",
     "git",
@@ -11,10 +11,10 @@
   "author": "dot-event <oss@dot-event.io>",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dot-event/git.git"
+    "url": "git+ssh://git@github.com/dot-event/spawn-git.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/dot-event/git#readme",
+  "homepage": "https://github.com/dot-event/spawn-git#readme",
   "bin": {
     "dot-git": "./bin/dot-git"
   },
