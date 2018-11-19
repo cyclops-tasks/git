@@ -1,4 +1,4 @@
-# dot-spawn-git
+# @dot-event/git
 
 dot-event spawn git operation
 

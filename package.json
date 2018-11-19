@@ -1,5 +1,5 @@
 {
-  "name": "dot-spawn-git",
+  "name": "@dot-event/git",
   "version": "0.2.0",
   "main": "dist/git.js",
   "description": "dot-event spawn git operation",
@@ -11,10 +11,10 @@
   "author": "dot-event <oss@dot-event.io>",
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/dot-event/spawn-git.git"
+    "url": "git+ssh://git@github.com/dot-event/git.git"
   },
   "license": "MIT",
-  "homepage": "https://github.com/dot-event/spawn-git#readme",
+  "homepage": "https://github.com/dot-event/git#readme",
   "bin": {
     "dot-git": "./bin/dot-git"
   },
@@ -38,11 +38,11 @@
   ],
   "dependencies": {
     "@babel/runtime": "7.1.5",
-    "dot-event": "2.9.0",
-    "dot-logger": "0.9.0",
-    "dot-spawn": "2.3.0",
-    "dot-store": "5.5.0",
-    "dot-task": "1.5.0"
+    "dot-event": "2.10.0",
+    "@dot-event/log": "0.9.0",
+    "@dot-event/spawn": "2.3.0",
+    "@dot-event/store": "5.6.0",
+    "@dot-event/task": "1.6.0"
   },
   "devDependencies": {
     "@babel/cli": "7.1.2",
