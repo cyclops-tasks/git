@@ -37,7 +37,7 @@
     "watchman-babel"
   ],
   "dependencies": {
-    "@babel/runtime": "7.1.5",
+    "@babel/runtime": "7.1.2",
     "dot-event": "2.10.0",
     "@dot-event/log": "0.9.0",
     "@dot-event/spawn": "2.3.0",
