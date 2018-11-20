@@ -41,30 +41,22 @@ test("commit", async () => {
     {
       args: ["add", "."],
       command: "git",
-      options: {
-        cwd: `${__dirname}/fixture/project-a`,
-      },
+      cwd: `${__dirname}/fixture/project-a`,
     },
     {
       args: ["add", ".", "-u"],
       command: "git",
-      options: {
-        cwd: `${__dirname}/fixture/project-a`,
-      },
+      cwd: `${__dirname}/fixture/project-a`,
     },
     {
       args: ["commit", "-a", "-m", "hi"],
       command: "git",
-      options: {
-        cwd: `${__dirname}/fixture/project-a`,
-      },
+      cwd: `${__dirname}/fixture/project-a`,
     },
     {
       args: ["push", "origin", "master"],
       command: "git",
-      options: {
-        cwd: `${__dirname}/fixture/project-a`,
-      },
+      cwd: `${__dirname}/fixture/project-a`,
     },
   ])
 })
