@@ -42,7 +42,7 @@
     "@dot-event/log": "0.9.0",
     "@dot-event/spawn": "2.3.0",
     "@dot-event/store": "5.6.0",
-    "@dot-event/task": "1.6.0"
+    "@dot-event/task": "1.7.0"
   },
   "devDependencies": {
     "@babel/cli": "7.1.2",
