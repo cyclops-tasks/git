@@ -1,6 +1,7 @@
 import dotEvent from "dot-event"
 import dotStore from "@dot-event/store"
 import dotTask from "@dot-event/task"
+
 import dotGit from "../dist/git"
 
 let events, store
@@ -9,6 +10,7 @@ beforeEach(async () => {
   events = dotEvent()
   store = dotStore({ events })
 
+  dotGit({ events, store })
   dotTask({ events, store })
 
   events.onAny({
@@ -21,7 +23,6 @@ beforeEach(async () => {
 async function run(...argv) {
   await events.task({
     argv,
-    composer: dotGit,
     op: "git",
     path: `${__dirname}/fixture`,
   })

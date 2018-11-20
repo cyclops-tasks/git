@@ -3,17 +3,18 @@
 const dotEvent = require("dot-event").default
 const dotStore = require("@dot-event/store").default
 const dotTask = require("@dot-event/task").default
+
 const dotGit = require("../dist/git").default
 
 const events = dotEvent()
 const store = dotStore({ events })
 
+dotGit({ events, store })
 dotTask({ events, store })
 
 events
   .task({
     argv: process.argv.slice(2),
-    composer: dotGit,
     op: "git",
     path: process.cwd(),
   })
