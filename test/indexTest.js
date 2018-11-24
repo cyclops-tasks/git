@@ -35,7 +35,7 @@ test("commit", async () => {
     "before.spawn": ({ event }) => args.push(event.args[0]),
   })
 
-  await run("-a", "commit", "-m", "hi")
+  await run("--commit", "-m", "hi")
 
   expect(args).toEqual([
     {
