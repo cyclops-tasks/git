@@ -1,22 +1,25 @@
+// Packages
 import dotEvent from "dot-event"
-import dotStore from "@dot-event/store"
 import dotTask from "@dot-event/task"
 
+// Helpers
 import dotGit from "../dist/git"
 
-let events, store
+// Constants
+const cancel = ({ event }) => (event.signal.cancel = true)
 
+// Variables
+let events
+
+// Tests
 beforeEach(async () => {
   events = dotEvent()
-  store = dotStore({ events })
 
-  dotGit({ events, store })
-  dotTask({ events, store })
+  dotGit({ events })
+  dotTask({ events })
 
   events.onAny({
-    "before.spawn": ({ event }) => {
-      event.signal.cancel = true
-    },
+    "before.spawn": cancel,
   })
 })
 

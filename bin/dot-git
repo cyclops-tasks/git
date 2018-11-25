@@ -7,10 +7,10 @@ const dotTask = require("@dot-event/task").default
 const dotGit = require("../dist/git").default
 
 const events = dotEvent()
-const store = dotStore({ events })
 
-dotGit({ events, store })
-dotTask({ events, store })
+dotGit({ events })
+dotStore({ events })
+dotTask({ events })
 
 events
   .task({
