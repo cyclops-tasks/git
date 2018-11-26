@@ -39,12 +39,13 @@
   ],
   "dependencies": {
     "@babel/runtime": "7.1.2",
-    "dot-event": "2.12.5",
     "@dot-event/argv": "2.10.5",
     "@dot-event/log": "0.13.1",
     "@dot-event/spawn": "2.6.5",
     "@dot-event/store": "6.0.4",
-    "@dot-event/task": "1.11.6"
+    "@dot-event/task": "1.11.6",
+    "chalk": "2.4.1",
+    "dot-event": "2.12.5"
   },
   "devDependencies": {
     "@babel/cli": "7.1.2",
