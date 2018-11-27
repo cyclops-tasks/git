@@ -35,6 +35,14 @@ test("commit", async () => {
   const args = []
 
   events.onAny({
+    "before.gitStatus": [
+      cancel,
+      ({ event }) =>
+        (event.signal.returnValue = {
+          behind: false,
+          dirty: true,
+        }),
+    ],
     "before.spawn": ({ event }) => args.push(event.args[0]),
   })
 
