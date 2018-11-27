@@ -1,6 +1,6 @@
 {
   "name": "@dot-event/git",
-  "version": "0.6.8",
+  "version": "0.6.9",
   "main": "dist/git.js",
   "description": "dot-event spawn git operation",
   "keywords": [
@@ -41,7 +41,7 @@
     "@babel/runtime": "7.1.2",
     "@dot-event/argv": "2.10.5",
     "@dot-event/log": "0.13.1",
-    "@dot-event/spawn": "2.6.6",
+    "@dot-event/spawn": "2.6.7",
     "@dot-event/status": "0.0.2",
     "@dot-event/store": "6.0.4",
     "@dot-event/task": "1.11.7",
