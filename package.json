@@ -44,7 +44,7 @@
     "@dot-event/spawn": "2.6.8",
     "@dot-event/status": "0.0.3",
     "@dot-event/store": "6.0.5",
-    "@dot-event/task": "1.11.8",
+    "@dot-event/task": "1.11.9",
     "dot-event": "2.12.6"
   },
   "devDependencies": {
