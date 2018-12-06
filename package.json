@@ -41,7 +41,7 @@
     "@babel/runtime": "7.1.5",
     "@dot-event/argv": "2.10.6",
     "@dot-event/log": "0.13.2",
-    "@dot-event/spawn": "2.6.13",
+    "@dot-event/spawn": "2.6.14",
     "@dot-event/status": "0.0.3",
     "@dot-event/store": "6.0.5",
     "@dot-event/task": "1.11.12",
