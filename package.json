@@ -1,6 +1,6 @@
 {
   "name": "@dot-event/git",
-  "version": "0.6.17",
+  "version": "0.6.18",
   "main": "dist/git.js",
   "description": "dot-event spawn git operation",
   "keywords": [
