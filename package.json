@@ -39,13 +39,13 @@
   ],
   "dependencies": {
     "@babel/runtime": "7.2.0",
-    "@dot-event/argv": "2.10.10",
-    "@dot-event/log": "0.13.7",
-    "@dot-event/spawn": "2.6.32",
-    "@dot-event/status": "0.0.7",
-    "@dot-event/store": "6.0.9",
-    "@dot-event/task": "1.11.28",
-    "dot-event": "2.12.10"
+    "@dot-event/argv": "2.10.8",
+    "@dot-event/log": "0.13.5",
+    "@dot-event/spawn": "2.6.29",
+    "@dot-event/status": "0.0.5",
+    "@dot-event/store": "6.0.7",
+    "@dot-event/task": "1.11.25",
+    "dot-event": "2.12.8"
   },
   "devDependencies": {
     "@babel/cli": "7.2.0",
